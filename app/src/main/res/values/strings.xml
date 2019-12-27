@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">DatingTestApp</string>
+    <string name="app_name">LiveChat</string>
+    <string name="start_screen_header">Random user id ready</string>
+    <string name="start_screen_online_counter_prefix">online:</string>
+    <string name="start_screen_main_button">TO START SEARCHING</string>
+    <string name="start_screen_settings_button">settings</string>
+
+    <string name="search_screen_main_button">TURN ON CAMERA</string>
+
+    <string name="settings_screen_header">Settings</string>
+    <string name="settings_screen_camera">Camera permission</string>
+    <string name="settings_screen_hd_connection">HD connection</string>
+    <string name="settings_screen_men">Look for men</string>
+    <string name="settings_screen_women">Look for women</string>
+    <!--Internet Connection-->
+    <string name="wifi_connection_check_screen_header">Check your  internet connection</string>
+    <string name="wifi_connection_check_screen_cancel">Cancel</string>
+    <!--Privacy Policy-->
+    <string name="privacy_policy_screen_header">Privacy policy</string>
+    <string name="privacy_policy_accept">Accept</string>
+    <string name="privacy_policy_cancel">Cancel</string>
+    <string name="privacy_policy_body">User Generated Content Policy Responsibility Policy We are committed to responsible behaviour and reserve the right to moderate any user generated content i.e videos/photos before being published on our page.
+        The submitter must have the permission from all individuals which appear or are named in the submission (if any) to use their name and likeness in the submission, to grant their rights set forth herein.
+        The submitter must further make sure that the submission will not infringe any intellectual property rights of any third party (if any).
+        Furthermore the Submitter must confirm that they and the persons appearing in the submission are legal drinking age and above.
+        Content restrictions Content on our site must not: • Appeal to or depict individuals below the legal purchase age or portray objects,
+        images or cartoon figures that primarily appeal to persons below legal drinking age. • Contain images of those who are and look below 25 years of age.
+        • Contain offensive language or gestures, or anything that could be seen as offensive on the basis of gender, race, sexual orientation, religion or culture,
+        or is a personal attack on another user, individual or company. • Depict situations where beverage alcohol is being consumed excessively or in an irresponsible manner.
+        • Depict persons in a state of intoxication or in any way suggest that intoxication is socially acceptable conduct or promote the intoxicating effects of alcohol consumption.
+        • Contain any curative or therapeutic claim except as permitted by law. • Contain claims that individuals can attain sexual, sound, professional, educational,
+        or athletic success or status as a result of alcohol consumption. • Depict anti-social or dangerous behaviour. • Contain any lewd or indecent images or language.
+        • Contain gratuitous nudity, overt sexual activity, promiscuity or sexual lewd or indecent images or language. Bacardi reserves the right to adjust this policy as needed
+        and delete comments or photos for reasons not stated as on this list.faucibus.</string>
 </resources>
