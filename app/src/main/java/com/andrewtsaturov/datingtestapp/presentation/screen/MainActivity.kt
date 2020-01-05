@@ -4,6 +4,7 @@ import android.os.Bundle
 import com.andrewtsaturov.datingtestapp.R
 import com.andrewtsaturov.datingtestapp.presentation.common.OnBackPressed
 import com.andrewtsaturov.datingtestapp.presentation.navigation.LocalCiceroneHolder
+import com.andrewtsaturov.datingtestapp.presentation.navigation.Screens
 import com.arellomobile.mvp.MvpAppCompatActivity
 import org.koin.android.ext.android.get
 import ru.terrakok.cicerone.android.support.SupportAppNavigator
@@ -21,7 +22,7 @@ class MainActivity : MvpAppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.popBackStack()
-            //router.newRootScreen(Screens.ChatScreen())
+            router.newRootScreen(Screens.Start())
         }
     }
 

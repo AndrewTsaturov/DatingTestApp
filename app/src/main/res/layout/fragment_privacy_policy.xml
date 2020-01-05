@@ -6,11 +6,11 @@
     android:background="@drawable/ic_background">
 
     <TextView
-        android:id="@+id/start_header"
+        android:id="@+id/privacy_policy_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="86dp"
-        android:text="@string/start_screen_header"
+        android:text="@string/privacy_policy_screen_header"
         android:textAllCaps="true"
         android:textColor="@color/primaryText"
         android:textSize="24sp"
@@ -20,73 +20,45 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/start_online_counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:id="@+id/privacy_policy_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="15dp"
+        android:scrollbars="vertical"
         android:textAlignment="center"
         android:textColor="@color/secondaryText"
         android:textSize="18sp"
         android:textStyle="normal"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/start_header" />
+        app:layout_constraintTop_toBottomOf="@id/privacy_policy_header"
+        app:layout_constraintBottom_toTopOf="@id/privacy_policy_button_agree" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/start_accounts_rv"
-        android:layout_width="0dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/start_online_counter" />
-
-    <LinearLayout
-        android:id="@+id/image_buttons_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/start_accounts_rv">
-
-        <ImageView
-            android:id="@+id/start_rewind_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_rewind" />
-
-        <ImageView
-            android:id="@+id/start_message_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="46dp"
-            android:src="@drawable/ic_message" />
-
-    </LinearLayout>
 
     <TextView
-        android:id="@+id/start_button_main"
+        android:id="@+id/privacy_policy_button_agree"
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="21dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/shape_accent_button"
         android:gravity="center"
-        android:text="@string/start_screen_main_button"
+        android:text="@string/privacy_policy_accept"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/privacy_policy_button_cancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_buttons_container" />
-
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/start_button_settings"
+        android:id="@+id/privacy_policy_button_cancel"
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginStart="90dp"
@@ -94,13 +66,14 @@
         android:layout_marginEnd="90dp"
         android:background="@drawable/shape_accent_transparent_button"
         android:gravity="center"
-        android:text="@string/start_screen_settings_button"
+        android:text="@string/privacy_policy_cancel"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/secondaryText"
         android:textSize="20sp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/start_button_main" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

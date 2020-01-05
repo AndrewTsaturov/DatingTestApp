@@ -5,4 +5,7 @@
     <color name="colorAccent">#BB65FF</color>
     <color name="primaryText">#656565</color>
     <color name="secondaryText">#979797</color>
+    <color name="accentShadowColor">#2BA83AFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="loading_backgroung_black">#979797</color>
 </resources>
