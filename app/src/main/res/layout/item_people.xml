@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="230dp"
-    android:background="@drawable/shape_round_person"
-    android:layout_height="match_parent">
+    android:scaleType="fitXY"
+    android:layout_height="230dp">
 
 </ImageView>

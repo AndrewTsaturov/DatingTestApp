@@ -11,6 +11,8 @@ import com.andrewtsaturov.datingtestapp.presentation.screen.start_screen.adapter
 import com.andrewtsaturov.datingtestapp.presentation.view.IStartScreenView
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.arellomobile.mvp.presenter.ProvidePresenter
+import com.gtomato.android.ui.manager.CarouselLayoutManager
+import com.gtomato.android.ui.transformer.CoverFlowViewTransformer
 import kotlinx.android.synthetic.main.fragment_start.*
 import org.koin.android.ext.android.get
 
@@ -29,14 +31,16 @@ class StartScreenFragment: BaseFragment(), IStartScreenView, OnPersonClickListen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        start_accounts_rv.apply {
-            adapter = personAdapter
-//            setPadding(context.convertDipToPixels(80), context.convertDipToPixels(68),
-//                context.convertDipToPixels(80), context.convertDipToPixels(12))
-        }
+//        start_accounts_rv.apply {
+//            isInfinite = true
+//            adapter = personAdapter
+//
+//            transformer = CoverFlowViewTransformer()
+//            setLayoutManager(CarouselLayoutManager())
+//        }
 
-        start_rewind_img.setOnClickListener {presenter.rewindClicked(start_accounts_rv.currentItem)}
-        start_message_img.setOnClickListener { presenter.conversationClicked(start_accounts_rv.currentItem) }
+//        start_rewind_img.setOnClickListener {presenter.rewindClicked(start_accounts_rv.currentItem)}
+//        start_message_img.setOnClickListener { presenter.conversationClicked(start_accounts_rv.currentItem) }
         start_button_main.setOnClickListener { presenter.conversationClicked() }
         start_button_settings.setOnClickListener { presenter.settingsClicked() }
     }

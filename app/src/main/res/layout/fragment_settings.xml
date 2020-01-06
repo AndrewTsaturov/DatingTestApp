@@ -31,66 +31,143 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Switch
-        android:id="@+id/settings_switch_camera"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/camera_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/secondaryText"
-        android:text="@string/settings_screen_camera"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/settings_header"
         android:layout_marginTop="77dp"
         android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        />
+        android:layout_marginEnd="50dp">
 
-    <Switch
-        android:id="@+id/settings_switch_connection"
+        <TextView
+            android:id="@+id/settings_text_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/secondaryText"
+            android:text="@string/settings_screen_camera"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <CheckBox
+            android:id="@+id/settings_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hd_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/secondaryText"
-        android:text="@string/settings_screen_hd_connection"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_switch_camera"
+        app:layout_constraintTop_toBottomOf="@id/camera_container"
         android:layout_marginTop="28dp"
         android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        />
+        android:layout_marginEnd="50dp">
 
-    <Switch
-        android:id="@+id/settings_switch_men"
+        <TextView
+            android:id="@+id/settings_text_hd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/secondaryText"
+            android:text="@string/settings_screen_hd_connection"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <CheckBox
+            android:id="@+id/settings_switch_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/men_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/secondaryText"
-        android:text="@string/settings_screen_men"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_switch_connection"
+        app:layout_constraintTop_toBottomOf="@id/hd_container"
         android:layout_marginTop="28dp"
         android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        />
+        android:layout_marginEnd="56.5dp">
 
+        <TextView
+            android:id="@+id/settings_text_men"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/secondaryText"
+            android:text="@string/settings_screen_men"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
 
-    <Switch
-        android:id="@+id/settings_switch_woman"
+        <CheckBox
+            android:id="@+id/settings_switch_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/women_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/secondaryText"
-        android:text="@string/settings_screen_women"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_switch_men"
+        app:layout_constraintTop_toBottomOf="@id/men_container"
         android:layout_marginTop="28dp"
         android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        />
+        android:layout_marginEnd="56.5dp">
+
+        <TextView
+            android:id="@+id/settings_text_women"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/secondaryText"
+            android:text="@string/settings_screen_women"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <CheckBox
+            android:id="@+id/settings_switch_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
